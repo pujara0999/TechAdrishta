@@ -9,6 +9,7 @@ html,
 body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	transition: 0.5s;
 }
 
 body {
@@ -27,11 +28,11 @@ header, section {
 }
 
 section {
-	padding: 100px 20px;
+	padding: 100px 20px 1px;
 }
 
 header {
-	background: #3f51b5;
+	background: transparent;
 	color: #fff;
 	margin: 20px 40px;
 	padding: 20px 0;
@@ -40,7 +41,8 @@ header {
 	flex-direction: column;
 	align-items: center;
 	border-radius: 10px;
-	background-color: #030B1B;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
 }
 
 header .text-center {
@@ -106,7 +108,7 @@ header .line {
 	width: 5px;
 	height: 95%;
 	position: absolute;
-	left: 52%;
+	left: 50%;
 	transform: translateX(-50%);
 }
 
@@ -170,9 +172,21 @@ header .line {
 	background: #3f51b5;
 	border-radius: 50%;
 	position: absolute;
-	left: 52%;
+	left: 50%;
 	margin-top: 25px;
 	margin-left: -15px;
+}
+
+.title-left {
+	width: 41%;
+}
+
+.title-right {
+	width: 41%;
+}
+
+.title-right h2 {
+	padding-top: 10px;
 }
 
 a {
@@ -235,10 +249,10 @@ a:focus {
 
 .timeline-item p {
 	color: #afb1b4;
+	padding-top: 14px;
 }
 
 blockquote {
-	
 	margin-top: 30px;
 	color: #757575;
 	border-left-color: #3f51b5;
@@ -254,6 +268,7 @@ blockquote {
 	top: 0;
 	right: 0;
 }
+
 
 @media screen and (max-width: 768px) {
 	header h1 {
