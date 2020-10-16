@@ -1,171 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechAdrishta</title>
-    <link rel="stylesheet" href="styles/indexStyles.css">
-</head>
-<body>
-    <section class="banner" id="home">
-        <div class="textBox" style="z-index: 998;">
-        <h2><br><span>Tech Adrishta</span></h2>
-        <h3>A space odyssey</h3>
-        <h3>31st October 2020 to 2nd November 2020</h3>
-        <a href="#about" class="btn">View TimeLine</a>
-        </div>
-        
-        <div id="particles-js" style="position:absolute; z-index:99;"></div>
-        </section>
-        <section class="about" id="about">
-        <div class="heading">
-        <h2>About Me</h2>
-        </div>
-        <div class="content">
-        <div class="contentBox w50">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-            Why do we use it?
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            
-            </p>
-        </div>
-        </div>
-        </section>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/theme.js"></script>
-<script>
-            window.addEventListener('scroll', function() {
-                var header = document.querySelector('header');
-                header.classList.toggle('sticky', window.scrollY > 0);
-            });
-            function toggleMenu() {
-                var menuToggle = document.querySelector(".toggle");
-                var menu = document.querySelector(".menu");
-                menuToggle.classList.toggle('active');
-                menu.classList.toggle('active');
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <title>Tech Adrishta 3.0 | Sikkim Manipal Institute of Technology</title>
+  <link rel="stylesheet" href="styles/indexStyles.css">
+</head>
+
+<body>
+  <header style="z-index: 999;">
+    <img src="img/icon.png" alt="">
+    <div class="toggle" onclick="toggleMenu()">
+        <ul class="menu">
+            <li><a href="#home" onclick="theme()">Theme</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </header>
+  <section class="banner" id="home">
+    <div class="textBox" style="z-index: 998;">
+      <img src="img/icon.png" alt="logo" class="logo">
+      <h2><br><span>Tech Adrishta</span></h2>
+      <h3>A space odyssey</h3>
+      <h3>October 31<sup>st</sup> to November 2<sup>nd</sup></h3>
+      <a href="timeline.html" class="btn">View TimeLine</a>
+      <p>Powered by Innovision</p>
+    </div>
+    <div id="particles-js" style="position:absolute; z-index:99;"></div>
+  </section>
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contentBox w50">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+
+          Why do we use it?
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      var menuToggle = document.querySelector(".toggle");
+      var menu = document.querySelector(".menu");
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script type="text/javascript">
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 140,
+          "density": {
+            "enable": true,
+            "value_area": 500
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#ffffff"
+          },
+          "polygon": {
+            "nb_sides": 6
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.3,
+          "width": 0
+        },
+        "move": {
+          "enable": true,
+          "speed": 5,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": [
+              "grab",
+              "bubble"
+            ]
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 0.7
             }
-        </script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script type="text/javascript">
-            particlesJS("particles-js", {
-              "particles": {
-                "number": {
-                  "value": 40,
-                  "density": {
-                    "enable": true,
-                    "value_area": 500
-                  }
-                },
-                "color": {
-                  "value": "#ffffff"
-                },
-                "shape": {
-                  "type": "circle",
-                  "stroke": {
-                    "width": 0,
-                    "color": "#ffffff"
-                  },
-                  "polygon": {
-                    "nb_sides": 6
-                  },
-                  "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
-                  }
-                },
-                "opacity": {
-                  "value": 0.5,
-                  "random": true
-                },
-                "size": {
-                  "value": 3,
-                  "random": true
-                },
-                "line_linked": {
-                  "enable": false,
-                  "distance": 150,
-                  "color": "#ffffff",
-                  "opacity": 0.3,
-                  "width": 0
-                },
-                "move": {
-                  "enable": true,
-                  "speed": 5,
-                  "direction": "none",
-                  "random": true,
-                  "straight": false,
-                  "out_mode": "out",
-                  "bounce": false,
-                  "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                  }
-                }
-              },
-              "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                  "onhover": {
-                    "enable": false,
-                    "mode": [
-                      "grab",
-                      "bubble"
-                    ]
-                  },
-                  "onclick": {
-                    "enable": false,
-                    "mode": "push"
-                  },
-                  "resize": true
-                },
-                "modes": {
-                  "grab": {
-                    "distance": 400,
-                    "line_linked": {
-                      "opacity": 0.7
-                    }
-                  },
-                  "bubble": {
-                    "distance": 600,
-                    "size": 1,
-                    "duration": 1,
-                    "opacity": 0.8,
-                    "speed": 2
-                  },
-                  "repulse": {
-                    "distance": 400,
-                    "duration": 0.4
-                  },
-                  "push": {
-                    "particles_nb": 20
-                  },
-                  "remove": {
-                    "particles_nb": 10
-                  }
-                }
-              },
-              "retina_detect": true
-            });
-            var count_particles, stats, update;
-            stats = new Stats;
-            stats.setMode(0);
-            stats.domElement.style.position = 'absolute';
-            stats.domElement.style.left = '0px';
-            stats.domElement.style.top = '0px';
-            document.body.appendChild(stats.domElement);
-            count_particles = document.querySelector('.js-count-particles');
-            update = function () {
-              stats.begin();
-              stats.end();
-              if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-              }
-              requestAnimationFrame(update);
-            };
-            requestAnimationFrame(update);;
-        </script>
-    
+          },
+          "bubble": {
+            "distance": 600,
+            "size": 1,
+            "duration": 1,
+            "opacity": 0.8,
+            "speed": 2
+          },
+          "repulse": {
+            "distance": 400,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 20
+          },
+          "remove": {
+            "particles_nb": 10
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+  </script>
+
 </body>
+
 </html>
