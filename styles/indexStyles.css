@@ -1,0 +1,63 @@
+:root {
+    --mainText : #FFFFFFFF;
+    --subtText : #000000FF;
+    --button : #2196f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--subtText);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: var(--mainText);
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-bottom: 0.1em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--mainText);
+}
+
+.banner #particles-js {
+    width: 80%;
+}
+
+.btn {
+    background: var(--button);
+    display: inline-block;
+    color: var(--mainText);
+    margin-top: 1em;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.3);
+}
