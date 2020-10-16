@@ -7,7 +7,7 @@
 
 html,
 body {
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	scroll-behavior: smooth;
 	transition: 0.5s;
 }
@@ -34,8 +34,8 @@ section {
 header {
 	background: transparent;
 	color: #fff;
-	margin: 20px 40px;
-	padding: 20px 0;
+	margin: 0;
+	padding: 20px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -97,6 +97,8 @@ header .line {
 	top: 0;
 	left: 0;
 }
+
+
 
 .timeline {
 	position: relative;
@@ -269,19 +271,61 @@ blockquote {
 	right: 0;
 }
 
+.nav {
+	background: transparent;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	color: #fff;
+	margin: 0;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 10px;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	z-index: 1005;
+}
+
+.nav a {
+	box-shadow: none;
+	padding: 0;
+	background: none;
+	font-size: 1.5em;
+}
+
+.nav a:hover {
+	color: #ff4081;
+}
+
+header a {
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+	font-size: 100%;
+}
+
+header a:hover {
+	color: #ff4081;
+	background: none;
+}
 
 @media screen and (max-width: 768px) {
 	header h1 {
-		font-size: 100%;
+		font-size: 150%;
 	}
 
 	header .line {
-		width: 180px;
+		width: 280px;
 		
 	}
 
 	header h3 {
-		font-size: 100%;
+		font-size: 120%;
 	}
 
 	header {
@@ -320,5 +364,9 @@ blockquote {
 		left: -15px;
 		border-width: 10px 15px 10px 0;
 		border-color: transparent #f5f5f5 transparent transparent;
+	}
+
+	.nav a {
+		font-size: 1em;
 	}
 }
