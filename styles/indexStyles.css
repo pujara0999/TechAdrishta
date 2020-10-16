@@ -162,3 +162,72 @@ header.sticky img {
 @media screen and (max-width: 768px) {
 
 }
+.sponsors {
+    background: var(--subtText);
+}
+
+.sponsors .heading {
+    color: var(--mainText);
+}
+
+.sponsors .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sponsors .content .servicesBox {
+    padding: 40px 20px;
+    color: var(--mainText);
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+/* 
+.sponsors .content .servicesBox:hover {
+    background: var(--button);
+} */
+
+.sponsors .content .servicesBox img {
+    width: 33%;
+}
+
+.sponsors .content .servicesBox h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBox {
+    padding-right: 30px;
+    
+}
+
+.contentBox h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contentBox p {
+    font-weight: 500;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+.w50 img {
+    width: 105%;
+    filter: invert(1);
+}
+.about {
+    background: var(--mainText);
+    color: var(--subtText);
+}
