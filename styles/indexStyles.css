@@ -241,7 +241,7 @@ header.sticky img {
 }
 
 .sponsors .content .servicesBox {
-    padding: 40px 60px;
+    padding: 40px 40px;
     color: var(--mainText);
     max-width: 340px;
     margin: 20px;
@@ -254,8 +254,8 @@ header.sticky img {
 }
 
 .sponsors .content .servicesBox img {
-    height: 180px;
-    width: 180px;
+    height: 128px;
+    width: 128px;
 }
 
 .sponsors .content .servicesBox h2 {
