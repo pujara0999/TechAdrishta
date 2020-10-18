@@ -269,7 +269,7 @@ header.sticky img {
     align-items: center;
     justify-content: space-around;
     color: var(--subtText);
-    padding: 80px;
+    padding: 80px 180px;
     text-align: center
 }
 
@@ -277,8 +277,8 @@ header.sticky img {
     top: 0;
     left: 0;
     right: 0;
-    width: 136px;
-    height: 136px;
+    width: 200px;
+    height: 200px;
     margin: auto;
     display: block;
     color: #f2f2f2;
@@ -320,6 +320,23 @@ header.sticky img {
     color: var(--mainText);
 }
 
+.carmain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carmain .galdef p{
+    color: var(--mainText);
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 30px;
+}
+
+.gallery .carousel {
+    width: 700px;
+    margin-left: 30px;
+}
+
 .gallery .carousel .carousel-caption h5, .mostLike .carousel-inner .carousel-caption h5{
     font-weight: 800;
 }
@@ -334,6 +351,10 @@ header.sticky img {
     margin: auto;
 }
 
+.gallery .carousel .carousel-inner img {
+    height: 500px;
+}
+
 .gallery .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -342,6 +363,164 @@ header.sticky img {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-@media screen and (max-width: 768px) {
 
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+    header {
+        display: none;
+    }
+    .banner .textBox .logo {
+        width: 50%;
+    }
+    .banner h2 {
+        font-size: 120%;
+        line-height: 100%
+    }
+    .banner .subhead {
+        word-spacing: 5px;
+        letter-spacing: 5px;
+    }
+    .banner p {
+        font-size: 80%;
+    }
+    .banner h3 {
+        font-size: 100%
+    }
+    .waveWrapperInner {
+        width: 1000px;
+    }
+    .about .content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .about .content .contentBox {
+        padding: 0;
+    }
+    .w50 img {
+        width: 100%;
+    }
+    .sponsors .heading {
+        padding: 30px 0;
+    }
+    .sponsors .content  .servicesBox {
+        margin: 0;
+    }
+    .testimonials {
+        padding: 20px 0;
+    }
+    .testimonials .heading {
+        padding: 30px 0;
+    }
+    .testimonials .carousel {
+        padding: 30px 20px;
+    }
+    .gallery {
+        padding: 20px 0;
+    }
+    .gallery .heading {
+        padding: 30px 30px;
+    }
+    .gallery .carmain {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .gallery .carmain .galdef {
+        padding: 0 20px 20px;
+        font-size: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gallery .carmain .galdef p {
+        margin: 0;
+    }
+    .gallery .carmain .carousel {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .gallery .carmain .carousel .carousel-inner .carousel-item img {
+        width: 216px;
+        height: 146px;
+    }
+    .gallery .carmain .carousel .carousel-indicators {
+        margin-bottom: 0;
+    }
 }
