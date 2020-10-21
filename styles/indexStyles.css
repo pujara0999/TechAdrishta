@@ -183,7 +183,7 @@ header.sticky img {
 .heading {
     width: 100%;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     color: var(--subtText);
 }
 
@@ -241,7 +241,7 @@ header.sticky img {
 }
 
 .sponsors .content .servicesBox {
-    padding: 40px 40px;
+    padding: 30px 30px;
     color: var(--mainText);
     max-width: 340px;
     margin: 20px;
@@ -434,6 +434,66 @@ header.sticky img {
     animation: move_wave 15s linear infinite;
 }
 
+.heading h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding-bottom: 0;
+}
+
+.contact .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .socials a {
+    padding: 0 30px;
+    color: var(--subtText);
+}
+
+.contact .socials i {
+    padding-bottom: 10px;
+}
+
+.contact .socials a:hover {
+    color: var(--button);
+    text-decoration: none;
+}
+
+.contact .meet {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact .meet a {
+    color: var(--subtText);
+}
+
+.contact .meet a:hover {
+    text-decoration: none;
+    color: var(--button);
+}
+
+.copy {
+    text-align: center;
+    background-color: var(--subtText);
+    color: var(--mainText)
+}
+
+.copy h4 {
+    margin-bottom: 0;
+    font-size: 100%;
+    padding: 10px;
+}
+
+.sponsors {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
 @media screen and (max-width: 768px) {
     body {
