@@ -20,6 +20,41 @@ body {
     width: 100%;
 }
 
+.hideScroll {
+    overflow: hidden;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    background: var(--subtText);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.block3 {
+    border-left: 2px solid var(--mainText);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 50px auto;
+    animation: block 0.5s infinite forwards linear;
+}
+
+@keyframes block {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hide-loader {
+    display: none;
+}
+
 section {
     height: 100%;
     padding: 100px;
@@ -446,6 +481,8 @@ header.sticky img {
 .contact .socials {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
@@ -562,7 +599,7 @@ header.sticky img {
         flex-direction: column;
     }
     .gallery .carmain .galdef {
-        padding: 0 20px 20px;
+        margin: 10px;
         font-size: 100%;
         justify-content: space-between;
         align-items: center;
@@ -582,5 +619,23 @@ header.sticky img {
     }
     .gallery .carmain .carousel .carousel-indicators {
         margin-bottom: 0;
+    }
+    .contact .socials {
+        flex-direction: column;
+    }
+    .contact .socials a {
+        padding: 20px;
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .copy {
+        width: 100%;
+    }
+    .copy h4 {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.8rem;
     }
 }
