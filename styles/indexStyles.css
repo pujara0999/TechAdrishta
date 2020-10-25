@@ -541,8 +541,15 @@ header.sticky img {
         width: 100%;
         padding: 20px;
     }
-    header {
+    .menu {
         display: none;
+    }
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+    header.sticky {
+        transition: 1s;
     }
     .banner .textBox .logo {
         width: 50%;
