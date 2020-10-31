@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -192,7 +195,7 @@ header .line {
 }
 
 a {
-	background: #0B182F;
+	background: #ff4040;
 	color: #fff;
 	padding: 8px 20px;
 	text-transform: uppercase;
@@ -262,7 +265,7 @@ blockquote {
 }
 
 .date {
-	background: #ff4081;
+	background: #ff4040;
 	display: inline-block;
 	color: #fff;
 	padding: 10px;
