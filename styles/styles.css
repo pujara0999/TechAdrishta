@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -195,7 +192,7 @@ header .line {
 }
 
 a {
-	background: #ff4040;
+	background: #0B182F;
 	color: #fff;
 	padding: 8px 20px;
 	text-transform: uppercase;
@@ -234,7 +231,7 @@ a:focus {
 }
 
 .timeline-img-header {
-	height: 300px;
+	height: 200px;
 	position: relative;
 	margin-bottom: 20px;
 }
@@ -265,10 +262,10 @@ blockquote {
 }
 
 .date {
-	background: #ff4040;
+	background: #ff4081;
 	display: inline-block;
 	color: #fff;
-	padding: 5px;
+	padding: 10px;
 	position: absolute;
 	top: 0;
 	right: 0;
