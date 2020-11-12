@@ -103,7 +103,7 @@ body {
 }
 
 canvas {
-   overflow-y: hidden;
+   overflow: hidden;
 }
 
 .team-details {
